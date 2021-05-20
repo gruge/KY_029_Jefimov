@@ -11,7 +11,7 @@ class KY_029{
 		multiply+=1;
 		this.canvasWidth=document.getElementById("myCanvas").getAttribute("width");
 		this.canvasWidth=this.canvasWidth.substr(0,this.canvasWidth.length-2);
-		if(this.canvasWidth<300*(multiply+1)){col+=1; multiply=multiply-3;}
+		if(this.canvasWidth<300*(multiply+1)){col+=1; multiply=multiply-4;}
 		this.x=300*multiply;
 		this.y=150*col;
 		

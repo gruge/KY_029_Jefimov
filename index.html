@@ -4,9 +4,16 @@
 <meta charset="utf-8" />
 <title></title>
 <script src="constructor.js"></script>
+<style>
+#myCanvas{
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+</style>
 </head>
 <body>
-<canvas id="myCanvas" style="display: block; margin-top: 250px; margin-left: auto; margin-right: auto;" height="1000px" width="1200px"></canvas>
+<canvas id="myCanvas"  height="900px" width="1200px"></canvas>
 <script>
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
@@ -14,6 +21,9 @@ var color = new KY_029(ctx,true,1,1);
 var color1 = new KY_029(ctx,true,0,0);
 var color2 = new KY_029(ctx,true,1,0);
 var color3 = new KY_029(ctx,true,0,1);
+var color4 = new KY_029(ctx,true,1,0);
+var color5 = new KY_029(ctx,true,1,1);
+var color6 = new KY_029(ctx,true,0,1);
 </script>
 </body>
 </html>
