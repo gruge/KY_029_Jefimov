@@ -10,10 +10,22 @@ display: block;
 margin-left: auto;
 margin-right: auto;
 }
+#container {
+    position: relative;
+}
+#copyright {
+    position: absolute;
+    
 </style>
 </head>
 <body>
-<canvas id="myCanvas"  height="900px" width="1200px"></canvas>
+<canvas id="myCanvas"  height="300px" width="1200px"></canvas>
+
+<div id="container">
+  <div id="copyright">
+    Copyright Jefimov INC.
+  </div>
+</div>
 <script>
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
@@ -23,7 +35,7 @@ var color2 = new KY_029(ctx,true,1,0);
 var color3 = new KY_029(ctx,true,0,1);
 var color4 = new KY_029(ctx,true,1,0);
 var color5 = new KY_029(ctx,true,1,1);
-var color6 = new KY_029(ctx,true,0,1);
+var color6 = new KY_029(ctx,false,0,1);
 </script>
 </body>
 </html>
